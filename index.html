@@ -12,67 +12,83 @@
 </head>
 <body>
   <div class="sparkles" aria-hidden="true"></div>
+  <div class="floaters" aria-hidden="true">
+    <span>👑</span><span>💖</span><span>🎤</span><span>✨</span><span>🥂</span><span>💃</span><span>🪩</span><span>💋</span>
+  </div>
+
   <header class="top">
-    <div class="brand">НИЗАМИ</div>
+    <div class="brand wobble">НИЗАМИ</div>
     <nav>
       <a href="#services">Услуги</a>
       <a href="#gallery">Галерея</a>
       <a href="#prices">Цены</a>
-      <a href="#book" class="btn btn-sm">Заказать</a>
+      <a href="#book" class="btn btn-sm pulse">Заказать</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">тамада · шоумен · человек в платье</p>
-        <h1>Низами выносит зал.<br /><span>Платье — рабочий инструмент.</span></h1>
+        <p class="eyebrow bounce-x">тамада · шоумен · человек в платье</p>
+        <h1 class="title-pop">Низами выносит зал.<br /><span class="rainbow">Платье — рабочий инструмент.</span></h1>
         <p class="lead">
           Когда обычный тамада говорит «ну что, повеселимся?», Низами уже в пайетках,
           с микрофоном и с армией улыбок вокруг. Свадьба станет легендой. Корпоратив —
           расследованием. Юбилей — культом личности.
         </p>
         <div class="hero-cta">
-          <a class="btn" href="#book">Хочу такого тамаду</a>
+          <a class="btn pulse" href="#book">Хочу такого тамаду</a>
           <a class="btn btn-ghost" href="#gallery">Смотреть доказательства</a>
         </div>
         <ul class="stats">
-          <li><strong>100%</strong><span>гостей в шоке</span></li>
+          <li><strong class="count-up">100%</strong><span>гостей в шоке</span></li>
           <li><strong>1</strong><span>розовое платье</span></li>
-          <li><strong>∞</strong><span>тостов «за любовь»</span></li>
+          <li><strong class="spin-inf">∞</strong><span>тостов «за любовь»</span></li>
         </ul>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/nizami-hero.jpg" width="1200" height="900" alt="Тамада Низами в розовом пайеточном платье в окружении весёлой компании" />
-        <figcaption>Документальное фото с места праздника. Лица гостей — счастливые. Лицо Низами — рабочее.</figcaption>
-      </figure>
+
+      <div class="hero-stage">
+        <div class="disco" aria-hidden="true">🪩</div>
+        <div class="spin-ring" aria-hidden="true"></div>
+        <figure class="hero-photo spin-slow">
+          <div class="photo-carousel" id="heroCarousel">
+            <img class="active" src="assets/nizami-hero.jpg" width="1200" height="900" alt="Тамада Низами в розовом пайеточном платье" />
+            <img src="assets/nizami-queen.jpg" width="1200" height="1500" alt="Низами Queen of Everything" />
+            <img src="assets/nizami-princess.jpg" width="1200" height="1500" alt="Низами Princess of the House" />
+          </div>
+          <figcaption id="heroCap">Документальное фото. Лицо Низами — рабочее. Платье — боевое.</figcaption>
+        </figure>
+        <p class="spin-hint">крутится сам · нажми на фото, если хочешь быстрее</p>
+      </div>
     </section>
 
     <section class="marquee" aria-hidden="true">
       <div class="marquee-track">
         <span>ТОСТЫ</span><span>★</span><span>ПАЙЕТКИ</span><span>★</span><span>ХОР ГОСТЕЙ</span><span>★</span>
-        <span>МИКРОФОН</span><span>★</span><span>ДРАМА</span><span>★</span><span>ЛЮБОВЬ</span><span>★</span>
+        <span>МИКРОФОН</span><span>★</span><span>ДРАМА</span><span>★</span><span>QUEEN</span><span>★</span>
+        <span>ПРИНЦЕССА</span><span>★</span><span>SLAY</span><span>★</span><span>ЛЮБОВЬ</span><span>★</span>
         <span>ТОСТЫ</span><span>★</span><span>ПАЙЕТКИ</span><span>★</span><span>ХОР ГОСТЕЙ</span><span>★</span>
-        <span>МИКРОФОН</span><span>★</span><span>ДРАМА</span><span>★</span><span>ЛЮБОВЬ</span><span>★</span>
+        <span>МИКРОФОН</span><span>★</span><span>ДРАМА</span><span>★</span><span>QUEEN</span><span>★</span>
+        <span>ПРИНЦЕССА</span><span>★</span><span>SLAY</span><span>★</span><span>ЛЮБОВЬ</span><span>★</span>
       </div>
     </section>
 
     <section id="services" class="section">
-      <h2>Что умеет Низами</h2>
+      <h2 class="title-pop">Что умеет Низами</h2>
       <p class="section-lead">Всё то же, что обычный тамада. Только громче, блестящее и с внезапным поворотом сюжета.</p>
       <div class="cards">
-        <article class="card">
-          <img src="assets/badge-mic.svg" alt="" />
+        <article class="card float-card">
+          <img class="icon-spin" src="assets/badge-mic.svg" alt="" />
           <h3>Тосты промышленного масштаба</h3>
           <p>От классики «за молодых» до импровизации, после которой родственники обнимаются и спорят, кто плакал первым.</p>
         </article>
-        <article class="card">
-          <img src="assets/badge-dress.svg" alt="" />
+        <article class="card float-card delay-1">
+          <img class="icon-spin reverse" src="assets/badge-dress.svg" alt="" />
           <h3>Образ «розовая угроза»</h3>
           <p>Пайеточное платье — не костюм. Это система управления вниманием зала. Работает даже на суровых дядь с усами.</p>
         </article>
-        <article class="card">
-          <img src="assets/badge-party.svg" alt="" />
+        <article class="card float-card delay-2">
+          <img class="icon-spin" src="assets/badge-party.svg" alt="" />
           <h3>Конкурсы без жалости</h3>
           <p>Гости думают, что «просто потанцуют». Через 10 минут у них общий чат, общий крик и общая любовь к Низами.</p>
         </article>
@@ -80,42 +96,42 @@
     </section>
 
     <section id="gallery" class="section gallery">
-      <h2>Галерея доказательств</h2>
+      <h2 class="title-pop">Галерея доказательств</h2>
       <div class="gallery-grid">
-        <figure class="shot big">
+        <figure class="shot big tilt-hover">
           <img src="assets/nizami-hero.jpg" alt="Низами в центре праздника" />
           <figcaption>«Я не улыбаюсь. Я веду.»</figcaption>
         </figure>
-        <figure class="quote-card">
+        <figure class="quote-card wobble-soft">
           <blockquote>«Вокруг — хор красавцев. В центре — человек, который знает, где спрятан торт.»</blockquote>
         </figure>
-        <figure class="shot">
+        <figure class="shot tilt-hover spin-on-hover">
           <img src="assets/nizami-queen.jpg" alt="Низами Queen of Everything" />
           <figcaption>Queen of Everything</figcaption>
         </figure>
-        <figure class="shot">
+        <figure class="shot tilt-hover spin-on-hover">
           <img src="assets/nizami-princess.jpg" alt="Низами Princess of the House" />
           <figcaption>Princess of the House</figcaption>
         </figure>
-        <figure class="shot">
-          <img src="assets/badge-party.svg" alt="" />
+        <figure class="shot tilt-hover">
+          <img class="icon-spin" src="assets/badge-party.svg" alt="" />
           <figcaption>Диско-шар одобряет</figcaption>
         </figure>
-        <figure class="shot">
-          <img src="assets/badge-mic.svg" alt="" />
+        <figure class="shot tilt-hover">
+          <img class="icon-spin reverse" src="assets/badge-mic.svg" alt="" />
           <figcaption>Микрофон тоже в команде</figcaption>
         </figure>
-        <figure class="shot">
-          <img src="assets/badge-dress.svg" alt="" />
+        <figure class="shot tilt-hover">
+          <img class="icon-spin" src="assets/badge-dress.svg" alt="" />
           <figcaption>Официальная форма тамады</figcaption>
         </figure>
       </div>
     </section>
 
     <section id="prices" class="section">
-      <h2>Пакеты (почти серьёзно)</h2>
+      <h2 class="title-pop">Пакеты (почти серьёзно)</h2>
       <div class="prices">
-        <article class="price">
+        <article class="price float-card">
           <h3>Лёгкий блеск</h3>
           <p class="tag">2–3 часа</p>
           <ul>
@@ -125,7 +141,7 @@
           </ul>
           <p class="sum">от договорённости</p>
         </article>
-        <article class="price featured">
+        <article class="price featured float-card delay-1">
           <h3>Полный Низами</h3>
           <p class="tag">весь вечер</p>
           <ul>
@@ -136,7 +152,7 @@
           </ul>
           <p class="sum">легендарно</p>
         </article>
-        <article class="price">
+        <article class="price float-card delay-2">
           <h3>Корпоративный хаос</h3>
           <p class="tag">офис / зал</p>
           <ul>
@@ -150,10 +166,10 @@
     </section>
 
     <section id="book" class="section book">
-      <div class="book-box">
-        <h2>Заказать Низами</h2>
+      <div class="book-box pulse-border">
+        <h2 class="title-pop">Заказать Низами</h2>
         <p>Напишите дату, город и насколько гости готовы к неожиданностям. Ответ — быстрее, чем первый тост.</p>
-        <a class="btn" href="mailto:digitalaleksei@gmail.com?subject=Тамада%20Низами%20на%20праздник">Написать на почту</a>
+        <a class="btn pulse" href="mailto:digitalaleksei@gmail.com?subject=Тамада%20Низами%20на%20праздник">Написать на почту</a>
         <p class="fine">Почта: digitalaleksei@gmail.com · сайт nizami.site</p>
       </div>
     </section>
@@ -161,10 +177,8 @@
 
   <footer>
     <p>© <span id="y"></span> Низами · тамада, которого не забудут</p>
-    <p class="fine">Сайт сделан с любовью к пайеткам и хорошему тосту.</p>
+    <p class="fine">Сайт сделан с любовью к пайеткам, вращению и хорошему тосту.</p>
   </footer>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/party.js"></script>
 </body>
 </html>
