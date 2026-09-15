@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+  <rect width="400" height="400" rx="48" fill="#1b1020"/>
+  <circle cx="200" cy="170" r="85" fill="none" stroke="#ffd36a" stroke-width="10"/>
+  <circle cx="200" cy="170" r="8" fill="#ff4da6"/>
+  <path d="M200 255 L200 310" stroke="#ffd36a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M150 330 Q200 300 250 330" fill="none" stroke="#ff4da6" stroke-width="8"/>
+  <text x="70" y="90" fill="#fff" font-size="34">✦</text>
+  <text x="310" y="120" fill="#ffd36a" font-size="28">✧</text>
+  <text x="200" y="375" text-anchor="middle" fill="#ffd36a" font-family="Georgia, serif" font-size="26" font-weight="700">ЗАЛ ВЗОРВАН</text>
+</svg>
