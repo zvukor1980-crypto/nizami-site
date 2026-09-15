@@ -1,14 +1,14 @@
 :root {
-  --bg: #20141c;
-  --bg2: #2c1a24;
-  --pink: #f2a7c0;
-  --rose: #e88aad;
-  --gold: #ebc7a8;
-  --cream: #fff6f4;
-  --muted: #d2b6c0;
-  --card: #322028;
-  --line: rgba(242, 167, 192, 0.38);
-  --shadow: 0 24px 60px rgba(80, 24, 48, .42);
+  --bg: #2a1020;
+  --bg2: #3a1830;
+  --pink: #ff6eb4;
+  --rose: #ff4da6;
+  --gold: #ffe066;
+  --cream: #fff7fb;
+  --muted: #f0c4d6;
+  --card: #4a2038;
+  --line: rgba(255, 110, 180, 0.55);
+  --shadow: 0 24px 60px rgba(120, 20, 70, .5);
   --radius: 28px;
   --font: "Manrope", system-ui, sans-serif;
   --display: "Caveat", cursive;
@@ -20,10 +20,10 @@ body {
   font-family: var(--font);
   color: var(--cream);
   background:
-    radial-gradient(1100px 700px at 8% -8%, rgba(242,167,192,.38), transparent 58%),
-    radial-gradient(900px 560px at 92% 8%, rgba(232,138,173,.22), transparent 52%),
-    radial-gradient(800px 520px at 50% 105%, rgba(232,138,173,.20), transparent 55%),
-    linear-gradient(180deg, rgba(242,167,192,.06), transparent 30%),
+    radial-gradient(1200px 800px at 5% -5%, rgba(255,110,180,.55), transparent 55%),
+    radial-gradient(900px 600px at 95% 5%, rgba(255,224,102,.28), transparent 50%),
+    radial-gradient(900px 700px at 50% 110%, rgba(255,77,166,.35), transparent 55%),
+    radial-gradient(600px 400px at 70% 40%, rgba(180,100,255,.18), transparent 50%),
     var(--bg);
   line-height: 1.55;
   overflow-x: hidden;
@@ -450,4 +450,86 @@ main, header, footer { position: relative; z-index: 1; }
     0 0 0 8px #ffd36a,
     8px 10px 0 rgba(232, 138, 173, .35),
     var(--shadow) !important;
+}
+
+.sparkles {
+  pointer-events: none; position: fixed; inset: 0; z-index: 0;
+  background-image:
+    radial-gradient(3px 3px at 12% 22%, rgba(255,110,180,.95), transparent),
+    radial-gradient(2px 2px at 28% 70%, rgba(255,224,102,.9), transparent),
+    radial-gradient(3px 3px at 55% 18%, rgba(255,255,255,.75), transparent),
+    radial-gradient(2px 2px at 72% 48%, rgba(255,110,180,.85), transparent),
+    radial-gradient(3px 3px at 88% 78%, rgba(180,120,255,.8), transparent),
+    radial-gradient(2px 2px at 40% 40%, rgba(255,224,102,.7), transparent);
+  animation: twinkle 1.6s ease-in-out infinite alternate;
+}
+@keyframes twinkle { from { opacity: .45; filter: hue-rotate(0deg); } to { opacity: 1; filter: hue-rotate(25deg); } }
+.floaters, .confetti {
+  pointer-events: none; position: fixed; inset: 0; overflow: hidden; z-index: 0;
+}
+.floaters span, .confetti i {
+  position: absolute; bottom: -10vh; font-size: clamp(1.4rem, 3vw, 2.4rem);
+  opacity: .85; will-change: transform;
+  animation: rise-spin var(--dur, 11s) linear infinite;
+  animation-delay: var(--delay, 0s);
+  left: var(--x, 10%);
+  filter: drop-shadow(0 6px 10px rgba(255,77,166,.35));
+}
+.floaters span.fly-lg { font-size: clamp(2rem, 4.5vw, 3.4rem); opacity: .95; }
+.confetti i {
+  width: 10px; height: 16px; border-radius: 2px; font-size: 0;
+  background: var(--c, #ff6eb4);
+  animation-name: confetti-fall;
+}
+@keyframes rise-spin {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+  25% { transform: translate3d(18px, -28vh, 0) rotate(90deg) scale(1.08); }
+  50% { transform: translate3d(-14px, -55vh, 0) rotate(180deg) scale(1.15); }
+  75% { transform: translate3d(22px, -82vh, 0) rotate(270deg) scale(1.05); }
+  100% { transform: translate3d(0, -120vh, 0) rotate(360deg) scale(1); }
+}
+@keyframes confetti-fall {
+  0% { transform: translate3d(0,0,0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(var(--drift, 40px), -110vh, 0) rotate(720deg); opacity: .2; }
+}
+@keyframes rainbow-shift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+.title-pop, .brand, .rainbow {
+  animation: rainbow-shift 8s linear infinite;
+}
+.marquee-track {
+  animation-duration: 12s !important;
+}
+.disco {
+  animation: spin 2.2s linear infinite, rainbow-shift 5s linear infinite !important;
+  font-size: 2.4rem !important;
+}
+.pulse {
+  animation: party-pulse 1.1s ease-in-out infinite !important;
+}
+@keyframes party-pulse {
+  0%, 100% { transform: scale(1) rotate(-1deg); filter: brightness(1); }
+  50% { transform: scale(1.07) rotate(1deg); filter: brightness(1.15); }
+}
+.hero-photo.toon-frame {
+  animation: wiggle-frame 3.5s ease-in-out infinite;
+}
+@keyframes wiggle-frame {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+.toon-frame {
+  border-color: #ff6eb4 !important;
+  box-shadow:
+    0 0 0 4px #2a1020,
+    0 0 0 9px #ffe066,
+    0 0 28px rgba(255,110,180,.45),
+    10px 12px 0 rgba(255,77,166,.45),
+    var(--shadow) !important;
+}
+.btn {
+  background: linear-gradient(135deg, #ff4da6, #ff6eb4 35%, #ffe066 75%, #b478ff) !important;
+  animation: party-pulse 1.4s ease-in-out infinite;
 }
