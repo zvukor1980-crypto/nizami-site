@@ -3,23 +3,160 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nizami</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      margin: 0; min-height: 100vh; display: grid; place-items: center;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: #0f1115; color: #f4f1ea;
-    }
-    main { text-align: center; padding: 2rem; }
-    h1 { font-weight: 600; letter-spacing: 0.04em; margin: 0 0 0.5rem; }
-    p { opacity: 0.7; margin: 0; }
-  </style>
+  <title>Низами — тамада легендарного калибра</title>
+  <meta name="description" content="Тамада Низами: свадьбы, юбилеи и корпоративы, где зал не выживает — но смеётся до слёз. Пайетки включены." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/studio.css" />
 </head>
 <body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <header class="top">
+    <div class="brand">НИЗАМИ</div>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#prices">Цены</a>
+      <a href="#book" class="btn btn-sm">Заказать</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>Nizami</h1>
-    <p>nizami.site</p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">тамада · шоумен · человек в платье</p>
+        <h1>Низами выносит зал.<br /><span>Платье — рабочий инструмент.</span></h1>
+        <p class="lead">
+          Когда обычный тамада говорит «ну что, повеселимся?», Низами уже в пайетках,
+          с микрофоном и с армией улыбок вокруг. Свадьба станет легендой. Корпоратив —
+          расследованием. Юбилей — культом личности.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#book">Хочу такого тамаду</a>
+          <a class="btn btn-ghost" href="#gallery">Смотреть доказательства</a>
+        </div>
+        <ul class="stats">
+          <li><strong>100%</strong><span>гостей в шоке</span></li>
+          <li><strong>1</strong><span>розовое платье</span></li>
+          <li><strong>∞</strong><span>тостов «за любовь»</span></li>
+        </ul>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/nizami-hero.jpg" width="1200" height="900" alt="Тамада Низами в розовом пайеточном платье в окружении весёлой компании" />
+        <figcaption>Документальное фото с места праздника. Лица гостей — счастливые. Лицо Низами — рабочее.</figcaption>
+      </figure>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>ТОСТЫ</span><span>★</span><span>ПАЙЕТКИ</span><span>★</span><span>ХОР ГОСТЕЙ</span><span>★</span>
+        <span>МИКРОФОН</span><span>★</span><span>ДРАМА</span><span>★</span><span>ЛЮБОВЬ</span><span>★</span>
+        <span>ТОСТЫ</span><span>★</span><span>ПАЙЕТКИ</span><span>★</span><span>ХОР ГОСТЕЙ</span><span>★</span>
+        <span>МИКРОФОН</span><span>★</span><span>ДРАМА</span><span>★</span><span>ЛЮБОВЬ</span><span>★</span>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Что умеет Низами</h2>
+      <p class="section-lead">Всё то же, что обычный тамада. Только громче, блестящее и с внезапным поворотом сюжета.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/badge-mic.svg" alt="" />
+          <h3>Тосты промышленного масштаба</h3>
+          <p>От классики «за молодых» до импровизации, после которой родственники обнимаются и спорят, кто плакал первым.</p>
+        </article>
+        <article class="card">
+          <img src="assets/badge-dress.svg" alt="" />
+          <h3>Образ «розовая угроза»</h3>
+          <p>Пайеточное платье — не костюм. Это система управления вниманием зала. Работает даже на суровых дядь с усами.</p>
+        </article>
+        <article class="card">
+          <img src="assets/badge-party.svg" alt="" />
+          <h3>Конкурсы без жалости</h3>
+          <p>Гости думают, что «просто потанцуют». Через 10 минут у них общий чат, общий крик и общая любовь к Низами.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <h2>Галерея доказательств</h2>
+      <div class="gallery-grid">
+        <figure class="shot big">
+          <img src="assets/nizami-hero.jpg" alt="Низами в центре праздника" />
+          <figcaption>«Я не улыбаюсь. Я веду.»</figcaption>
+        </figure>
+        <figure class="quote-card">
+          <blockquote>«Вокруг — хор красавцев. В центре — человек, который знает, где спрятан торт.»</blockquote>
+        </figure>
+        <figure class="shot">
+          <img src="assets/badge-party.svg" alt="" />
+          <figcaption>Диско-шар одобряет</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/badge-mic.svg" alt="" />
+          <figcaption>Микрофон тоже в команде</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/badge-dress.svg" alt="" />
+          <figcaption>Официальная форма тамады</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="prices" class="section">
+      <h2>Пакеты (почти серьёзно)</h2>
+      <div class="prices">
+        <article class="price">
+          <h3>Лёгкий блеск</h3>
+          <p class="tag">2–3 часа</p>
+          <ul>
+            <li>Выход в платье</li>
+            <li>3 фирменных тоста</li>
+            <li>Один конкурс «кто громче орёт „Низами!“»</li>
+          </ul>
+          <p class="sum">от договорённости</p>
+        </article>
+        <article class="price featured">
+          <h3>Полный Низами</h3>
+          <p class="tag">весь вечер</p>
+          <ul>
+            <li>Всё из «Лёгкого блеска»</li>
+            <li>Управление танцполом</li>
+            <li>Экстренный тост для тёщи</li>
+            <li>Фото с платьем — обязательно</li>
+          </ul>
+          <p class="sum">легендарно</p>
+        </article>
+        <article class="price">
+          <h3>Корпоративный хаос</h3>
+          <p class="tag">офис / зал</p>
+          <ul>
+            <li>Игровые блоки</li>
+            <li>Розыгрыш «сотрудник месяца в пайетках»</li>
+            <li>Финал, после которого HR пишет отчёт</li>
+          </ul>
+          <p class="sum">по запросу</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="book" class="section book">
+      <div class="book-box">
+        <h2>Заказать Низами</h2>
+        <p>Напишите дату, город и насколько гости готовы к неожиданностям. Ответ — быстрее, чем первый тост.</p>
+        <a class="btn" href="mailto:digitalaleksei@gmail.com?subject=Тамада%20Низами%20на%20праздник">Написать на почту</a>
+        <p class="fine">Почта: digitalaleksei@gmail.com · сайт nizami.site</p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p>© <span id="y"></span> Низами · тамада, которого не забудут</p>
+    <p class="fine">Сайт сделан с любовью к пайеткам и хорошему тосту.</p>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
