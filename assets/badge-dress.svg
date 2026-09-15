@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+  <rect width="400" height="400" rx="48" fill="#120c1a"/>
+  <path d="M160 80 L240 80 L255 160 L300 340 L100 340 L145 160 Z" fill="#ff4da6" stroke="#ffd36a" stroke-width="6"/>
+  <circle cx="175" cy="200" r="6" fill="#ffd36a"/>
+  <circle cx="200" cy="230" r="6" fill="#ffd36a"/>
+  <circle cx="225" cy="210" r="6" fill="#ffd36a"/>
+  <circle cx="190" cy="270" r="5" fill="#fff"/>
+  <circle cx="220" cy="290" r="5" fill="#fff"/>
+  <text x="200" y="375" text-anchor="middle" fill="#ffd36a" font-family="Georgia, serif" font-size="26" font-weight="700">ПАЙЕТКИ</text>
+</svg>
