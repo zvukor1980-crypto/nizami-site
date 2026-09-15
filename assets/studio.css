@@ -297,3 +297,157 @@ main, header, footer { position: relative; z-index: 1; }
   color: var(--muted);
   font-size: .95rem;
 }
+
+
+/* ===== cartoon frames & stickers ===== */
+.toon-frame {
+  position: relative;
+  border: 4px solid #f2a7c0 !important;
+  box-shadow:
+    0 0 0 4px #2a1520,
+    0 0 0 8px #f7c4d4,
+    8px 10px 0 rgba(232, 138, 173, .35),
+    var(--shadow) !important;
+  border-radius: 28px !important;
+  background-clip: padding-box;
+}
+.toon-frame-inner {
+  position: relative;
+  border: 3px dashed #f7c4d4;
+  border-radius: 22px;
+  padding: .55rem;
+  background:
+    repeating-linear-gradient(
+      -12deg,
+      rgba(242,167,192,.12),
+      rgba(242,167,192,.12) 12px,
+      rgba(255,255,255,.03) 12px,
+      rgba(255,255,255,.03) 24px
+    );
+}
+.frame-corners {
+  pointer-events: none;
+  position: absolute;
+  inset: .2rem;
+  z-index: 2;
+}
+.frame-corners i {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 3px solid var(--gold);
+  border-radius: 4px;
+}
+.frame-corners i:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.frame-corners i:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.frame-corners i:nth-child(3) { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+.frame-corners i:nth-child(4) { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+
+.sticker {
+  position: absolute;
+  z-index: 5;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: .28rem .7rem;
+  border-radius: 999px;
+  border: 3px solid #2a1520;
+  background: #f7c4d4;
+  color: #2a1520;
+  box-shadow: 3px 3px 0 #2a1520;
+  transform: rotate(-8deg);
+  white-space: nowrap;
+}
+.sticker-a { top: -12px; left: 14px; background: #ffd36a; transform: rotate(-10deg); }
+.sticker-b { top: -14px; left: 18px; background: #f2a7c0; animation: sticker-pop 2.4s ease-in-out infinite; }
+.sticker-c { top: -10px; right: 12px; left: auto; background: #ebc7a8; transform: rotate(7deg); font-size: .95rem; }
+@keyframes sticker-pop {
+  0%, 100% { transform: rotate(-8deg) scale(1); }
+  50% { transform: rotate(-4deg) scale(1.06); }
+}
+
+.quote-card.toon-frame {
+  padding: 1.4rem 1.2rem 1.1rem;
+}
+.quote-card blockquote {
+  margin: .4rem 0 .6rem;
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  line-height: 1.25;
+  color: var(--cream);
+}
+.quote-by {
+  margin: 0;
+  color: var(--pink);
+  font-family: var(--display);
+  font-size: 1.15rem;
+}
+
+.message-card.toon-frame {
+  max-width: 440px;
+  padding: 1.35rem 1.1rem 1.15rem;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(242,167,192,.35), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(255,211,106,.18), transparent 42%),
+    var(--card);
+}
+.message-video {
+  border-radius: 16px;
+  border: 3px solid #2a1520;
+  box-shadow: 0 8px 0 rgba(242,167,192,.45);
+}
+.speech-bubble {
+  position: relative;
+  margin: 1rem auto .35rem;
+  padding: .85rem 1rem;
+  background: #fff6f4;
+  color: #2a1520;
+  border: 3px solid #2a1520;
+  border-radius: 22px;
+  box-shadow: 4px 4px 0 #e88aad;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: left;
+}
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: -12px;
+  width: 18px;
+  height: 18px;
+  background: #fff6f4;
+  border-left: 3px solid #2a1520;
+  border-top: 3px solid #2a1520;
+  transform: rotate(45deg);
+}
+.speech-bubble p { margin: 0; }
+.message-caption {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  color: var(--pink);
+}
+
+/* cartoon-ier buttons */
+.btn {
+  border: 3px solid #2a1520 !important;
+  box-shadow: 4px 4px 0 #2a1520 !important;
+  border-radius: 999px !important;
+}
+.btn:hover {
+  transform: translate(-2px, -2px) scale(1.03) rotate(-1deg) !important;
+  box-shadow: 6px 6px 0 #2a1520 !important;
+}
+.btn-ghost {
+  background: rgba(242,167,192,.12) !important;
+  box-shadow: 3px 3px 0 #e88aad !important;
+}
+
+.price.featured.toon-frame {
+  border-color: #ffd36a !important;
+  box-shadow:
+    0 0 0 4px #2a1520,
+    0 0 0 8px #ffd36a,
+    8px 10px 0 rgba(232, 138, 173, .35),
+    var(--shadow) !important;
+}
