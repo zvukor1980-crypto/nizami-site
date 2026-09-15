@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/studio.css?v=rose2" />
+  <link rel="stylesheet" href="assets/studio.css?v=cartoon1" />
 </head>
 <body>
   <div class="sparkles" aria-hidden="true"></div>
@@ -51,7 +51,7 @@
       <div class="hero-stage">
         <div class="disco" aria-hidden="true">🪩</div>
         <div class="spin-ring" aria-hidden="true"></div>
-        <figure class="hero-photo spin-slow">
+        <figure class="hero-photo spin-slow toon-frame">
           <div class="photo-carousel" id="heroCarousel">
             <img class="active" src="assets/nizami-hero.jpg" width="1200" height="900" alt="Тамада Низами в розовом пайеточном платье" />
             <img src="assets/nizami-queen.jpg" width="1200" height="1500" alt="Низами Queen of Everything" />
@@ -78,17 +78,17 @@
       <h2 class="title-pop">Что умеет Низами</h2>
       <p class="section-lead">Всё то же, что обычный тамада. Только громче, блестящее и с внезапным поворотом сюжета.</p>
       <div class="cards">
-        <article class="card float-card">
+        <article class="card float-card toon-frame">
           <img class="icon-spin" src="assets/badge-mic.svg" alt="" />
           <h3>Тосты промышленного масштаба</h3>
           <p>От классики «за молодых» до импровизации, после которой родственники обнимаются и спорят, кто плакал первым.</p>
         </article>
-        <article class="card float-card delay-1">
+        <article class="card float-card delay-1 toon-frame">
           <img class="icon-spin reverse" src="assets/badge-dress.svg" alt="" />
           <h3>Образ «розовая угроза»</h3>
           <p>Пайеточное платье — не костюм. Это система управления вниманием зала. Работает даже на суровых дядь с усами.</p>
         </article>
-        <article class="card float-card delay-2">
+        <article class="card float-card delay-2 toon-frame">
           <img class="icon-spin" src="assets/badge-party.svg" alt="" />
           <h3>Конкурсы без жалости</h3>
           <p>Гости думают, что «просто потанцуют». Через 10 минут у них общий чат, общий крик и общая любовь к Низами.</p>
@@ -99,43 +99,55 @@
 
     <section id="message" class="section message-section">
       <h2 class="title-pop">Сообщение для Низами</h2>
-      <p class="section-lead">Личное видео-послание тамаде. Включи звук — и не моргай.</p>
-      <div class="message-card float-card">
-        <video class="message-video" controls playsinline preload="metadata" poster="assets/nizami-hero.jpg">
-          <source src="assets/message-for-nizami.mp4" type="video/mp4" />
-          Ваш браузер не умеет в видео — но Низами умеет в шоу.
-        </video>
-        <p class="message-caption">Снято на iPhone · опубликовано на nizami.site специально для Низами 🎤✨</p>
+      <p class="section-lead">Срочное видео-послание. Включи звук. Не моргай. Пайетки не снимать.</p>
+      <div class="message-card toon-frame float-card">
+        <span class="sticker sticker-b" aria-hidden="true">📺 LIVE</span>
+        <span class="sticker sticker-c" aria-hidden="true">ТОЛЬКО ДЛЯ НИЗАМИ</span>
+        <div class="video-frame toon-frame-inner">
+          <div class="frame-corners" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <video class="message-video" controls playsinline preload="metadata" poster="assets/nizami-hero.jpg">
+            <source src="assets/message-for-nizami.mp4" type="video/mp4" />
+            Ваш браузер не умеет в видео — но Низами умеет в шоу.
+          </video>
+        </div>
+        <div class="speech-bubble">
+          <p>«Низами, смотри сюда. Это не реклама. Это официальное обращение Вселенной в твоём стиле.»</p>
+        </div>
+        <p class="message-caption">Снято на iPhone · опубликовано специально, чтобы Низами почувствовал себя звездой 🎤💖</p>
       </div>
     </section>
 
     <section id="gallery" class="section gallery">
       <h2 class="title-pop">Галерея доказательств</h2>
       <div class="gallery-grid">
-        <figure class="shot big tilt-hover">
+        <figure class="shot big tilt-hover toon-frame">
           <img src="assets/nizami-hero.jpg" alt="Низами в центре праздника" />
           <figcaption>«Я не улыбаюсь. Я веду.»</figcaption>
         </figure>
-        <figure class="quote-card wobble-soft">
-          <blockquote>«Вокруг — хор красавцев. В центре — человек, который знает, где спрятан торт.»</blockquote>
+        <figure class="quote-card toon-frame wobble-soft">
+          <span class="sticker sticker-a" aria-hidden="true">ОТЗЫВ ★</span>
+          <blockquote>«Мы звали тамаду. Приехал человек в пайетках, украл микрофон, тётю и весь вечер. Торт сдался без боя.»</blockquote>
+          <figcaption class="quote-by">— гость, который ещё не отошёл</figcaption>
         </figure>
-        <figure class="shot tilt-hover spin-on-hover">
+        <figure class="shot tilt-hover spin-on-hover toon-frame">
           <img src="assets/nizami-queen.jpg" alt="Низами Queen of Everything" />
           <figcaption>Queen of Everything</figcaption>
         </figure>
-        <figure class="shot tilt-hover spin-on-hover">
+        <figure class="shot tilt-hover spin-on-hover toon-frame">
           <img src="assets/nizami-princess.jpg" alt="Низами Princess of the House" />
           <figcaption>Princess of the House</figcaption>
         </figure>
-        <figure class="shot tilt-hover">
+        <figure class="shot tilt-hover toon-frame">
           <img class="icon-spin" src="assets/badge-party.svg" alt="" />
           <figcaption>Диско-шар одобряет</figcaption>
         </figure>
-        <figure class="shot tilt-hover">
+        <figure class="shot tilt-hover toon-frame">
           <img class="icon-spin reverse" src="assets/badge-mic.svg" alt="" />
           <figcaption>Микрофон тоже в команде</figcaption>
         </figure>
-        <figure class="shot tilt-hover">
+        <figure class="shot tilt-hover toon-frame">
           <img class="icon-spin" src="assets/badge-dress.svg" alt="" />
           <figcaption>Официальная форма тамады</figcaption>
         </figure>
@@ -145,7 +157,7 @@
     <section id="prices" class="section">
       <h2 class="title-pop">Пакеты (почти серьёзно)</h2>
       <div class="prices">
-        <article class="price float-card">
+        <article class="price float-card toon-frame">
           <h3>Лёгкий блеск</h3>
           <p class="tag">2–3 часа</p>
           <ul>
@@ -155,7 +167,7 @@
           </ul>
           <p class="sum">от договорённости</p>
         </article>
-        <article class="price featured float-card delay-1">
+        <article class="price featured float-card delay-1 toon-frame">
           <h3>Полный Низами</h3>
           <p class="tag">весь вечер</p>
           <ul>
@@ -166,7 +178,7 @@
           </ul>
           <p class="sum">легендарно</p>
         </article>
-        <article class="price float-card delay-2">
+        <article class="price float-card delay-2 toon-frame">
           <h3>Корпоративный хаос</h3>
           <p class="tag">офис / зал</p>
           <ul>
@@ -180,7 +192,7 @@
     </section>
 
     <section id="book" class="section book">
-      <div class="book-box pulse-border">
+      <div class="book-box pulse-border toon-frame">
         <h2 class="title-pop">Заказать Низами</h2>
         <p>Напишите дату, город и насколько гости готовы к неожиданностям. Ответ — быстрее, чем первый тост.</p>
         <a class="btn pulse" href="mailto:digitalaleksei@gmail.com?subject=Тамада%20Низами%20на%20праздник">Написать на почту</a>
